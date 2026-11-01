@@ -1,0 +1,12 @@
+{
+  "id": "e_oven-dial",
+  "kind": "config",
+  "title": "Oven dial: marks 1-9 to degrees",
+  "body": "The dial on my gas oven has marks 1-9 and no degrees. Starting point: the British gas mark scale. It is a generic table, not measured on this oven: gas ovens run 10-20 °C off and hotter at the top.\n\nTo measure: put an oven thermometer on the middle shelf, set one mark, wait 15 minutes, write the reading here as a new version and set `measured` to true.\n\n| Mark | °C | Use |\n|---|---|---|\n| 1 | 140 | slow drying, meringue |\n| 2 | 150 | slow roasting |\n| 3 | 170 | cakes, sponge |\n| 4 | 180 | most baking, casseroles |\n| 5 | 190 | meat in foil, chicken |\n| 6 | 200 | vegetables, crisp chicken |\n| 7 | 220 | browning, crust |\n| 8 | 230 | pizza, quick roasting |\n| 9 | 240 | maximum |\n",
+  "tags": ["oven", "equipment", "gas-mark"],
+  "data": {
+    "type": "dial",
+    "measured": false,
+    "marks": { "1": 140, "2": 150, "3": 170, "4": 180, "5": 190, "6": 200, "7": 220, "8": 230, "9": 240 }
+  }
+}

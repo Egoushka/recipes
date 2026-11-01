@@ -1,0 +1,9 @@
+.git
+.github
+**/bin
+**/obj
+**/TestResults
+docs
+*.md
+*.db
+*.db-*
