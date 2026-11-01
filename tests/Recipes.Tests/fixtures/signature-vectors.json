@@ -1,0 +1,53 @@
+[
+  {
+    "action_id": "01JB8Z3Q0V5N7K2M4R6T8W9XYZ",
+    "name": "cook.save",
+    "screen": "cook-new",
+    "at": "2026-10-31T18:40:03Z",
+    "context": {
+      "recipe_id": "r_01",
+      "version": 3,
+      "rating": 4,
+      "note": "Crust too dark",
+      "photos": [
+        "up_01JB8Z3Q0V5N7K2M4R6T8W9XYZ"
+      ]
+    },
+    "canonical": "{\"note\":\"Crust too dark\",\"photos\":[\"up_01JB8Z3Q0V5N7K2M4R6T8W9XYZ\"],\"rating\":4,\"recipe_id\":\"r_01\",\"version\":3}",
+    "h": "1793a706c937c2597862947fde8ec1405cfd4ee585c1a025d3106371f76367f3",
+    "sig": "b45e0e05caee834299c4caac7647969eb8388dae688a6c724a1fbfa7d77f903c"
+  },
+  {
+    "action_id": "01JB8Z3Q0V5N7K2M4R6T8W9XYZ",
+    "name": "cook.save",
+    "screen": "cook-new",
+    "at": "2026-10-31T18:40:03Z",
+    "context": {},
+    "canonical": "",
+    "h": "",
+    "sig": "27b0fb824d3a5fa5a8135969c9b9073aeffb5a165a0fcc23d25ef4240000d458"
+  },
+  {
+    "action_id": "01JB8Z3Q0V5N7K2M4R6T8W9XYZ",
+    "name": "cook.save",
+    "screen": "cook-new",
+    "at": "2026-10-31T18:40:03Z",
+    "context": {
+      "z": {
+        "b": 2,
+        "a": [
+          {
+            "y": 1,
+            "x": 0.5
+          }
+        ]
+      },
+      "a": "Печиво \"хрусть\" — 175 °C",
+      "t": true,
+      "n": null
+    },
+    "canonical": "{\"a\":\"Печиво \\\"хрусть\\\" — 175 °C\",\"n\":null,\"t\":true,\"z\":{\"a\":[{\"x\":0.5,\"y\":1}],\"b\":2}}",
+    "h": "1457527dadda5cc632daaecbb1c6a91655f398ec9f2a178ce90dfe959761349f",
+    "sig": "02a5b38fe6979a38b398061393e65ddff5f90459f08b354abcb17df795077be6"
+  }
+]

@@ -1,0 +1,32 @@
+name: release-please
+
+# release-please keeps one pull request open that writes the CHANGELOG.md section from the Conventional Commit
+# titles; merging it creates the GitHub Release vX.Y.Z. The token is the release App's, not GITHUB_TOKEN: a pull
+# request made with GITHUB_TOKEN starts no workflow, so CI would never run on it. Needs RELEASE_APP_ID (variable)
+# and RELEASE_APP_PRIVATE_KEY (secret) on this repo; until they exist this workflow fails and nothing else does.
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-please
+  cancel-in-progress: false
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        id: app
+        with:
+          app-id: ${{ vars.RELEASE_APP_ID }}
+          private-key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
+      - uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7 # v5.0.0
+        with:
+          token: ${{ steps.app.outputs.token }}
