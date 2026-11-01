@@ -1,6 +1,18 @@
+<!-- readme:header:start -->
+<p>
+  <img alt="status: Active" src="https://img.shields.io/badge/status-Active-2ea44f">
+  <a href="https://github.com/Egoushka/recipes/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/Egoushka/recipes/actions/workflows/ci.yml/badge.svg"></a>
+  <img alt="last commit" src="https://img.shields.io/github/last-commit/Egoushka/recipes?label=last%20change">
+</p>
+<!-- readme:header:end -->
+
 # recipes
 
 > A small cooking journal service: save recipes, techniques, your own variations and equipment settings, find them again by words or meaning, from a phone app or an AI assistant.
+
+<!-- readme:status:start -->
+**Active**. I work on it this month.
+<!-- readme:status:end -->
 
 ## Why
 
@@ -54,3 +66,9 @@ Not here yet: import from a link, photos and voice, a cook log with ratings, Nat
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
+
+<!-- readme:footer:start -->
+---
+
+<sub>Made by [Yehor Hrabovskyi](https://hrabovskyi.online) · [MIT licence](LICENSE).</sub>
+<!-- readme:footer:end -->
