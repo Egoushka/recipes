@@ -1,9 +1,10 @@
 name: release-image
 
-# Each release-please release pushes ghcr.io/egoushka/recipes:<version> for linux/amd64 and linux/arm64.
+# A version tag (v0.1.0) pushes ghcr.io/egoushka/recipes:<version> and :<major>.<minor> for linux/amd64 and linux/arm64.
+# Tag-triggered like whetstone and chronicle: no GitHub App is needed to publish an image.
 on:
-  release:
-    types: [published]
+  push:
+    tags: ['v*']
 
 permissions:
   contents: read
